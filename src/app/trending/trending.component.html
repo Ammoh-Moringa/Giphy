@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- <ng-progress></ng-progress> -->
+  <h1 class="text-center" style="margin-top: 60px">Trending Gifs</h1>
+  <div class="card-columns">
+    <div>
+      <div class="card" style="border: none;">
+        <div class="row">
+          <div class="col-md-4"*ngFor="let trendingGif of trendingGifs; index as i">
+            <a href="trendingGif.url" target="_blank"><img src="{{trendingGif.images.preview_webp.url}}" alt=""
+              width="100%"></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
